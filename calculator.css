@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px;
+    height: 100vh;
+    background-color: #9bc1bc;
+}
+
+h2{
+    font-size: 30px;
+    color: #060909;
+    padding-bottom: 24px;
+}
+
+.button-container {
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 1rem;
+    width: fit-content;
+    background-color: #413D66;
+}
+
+.input{ 
+    background-color: #413D66;
+    margin-top: 10px;
+    height: 120px;
+    width: 486px;
+    border-radius: 15px;
+    border: none;
+    text-align: right;
+    font-size: 3rem;
+    padding: 0px 40px 0px 40px;
+    cursor: pointer;
+    color: white;
+}
+
+.button-container div button {
+    background: white;
+    border: none;
+    height: 50px;
+    width: 100px;
+    margin: 0.3rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    background-color: rgb(200, 200, 200);
+    transform: scale(1.03);
+}
+    
+.button-container .clear:hover, .button-container .operator:hover, .contactlogo:hover, .popup-container .popup-submit-button:hover{
+    background-color: rgb(166, 190, 156);
+    transform: scale(1.03);
+}
+
+.popup-container .popup-close-button:hover{
+    color: rgb(166, 190, 156);
+}
+
+.button-container .operator, .button-container .clear{
+    background-color: rgb(191, 215, 181);
+}
+
+.button-container button:active, .popup-container .popup-submit-button:active, .popup-container .popup-close-button:active{
+    transform: scale(0.98);
+}
+
+.button-container .clear {
+    font-size: 1.4rem;
+}
+
+#equal{
+    width: 215px;
+    font-size: 2rem;
+}
+
+
+.contact {
+    align-self: flex-end;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: fit-content; 
+}
+
+.contactlogo {
+    width: 30px;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0.2rem;
+    background-color: #BFD7B5;
+}
+    
+.popup-container {
+    padding: 1em;
+    border: none;
+    margin: 100px 10px 0px 0px ;
+    width: fit-content;
+    background-color: #413D66;
+    border-radius: 15px;
+    justify-self: flex-end;
+}
+
+.popup-container::backdrop{
+    background: rgba(155, 173, 168, .5);
+}
+
+#message, #email, #name{
+    resize: none;
+    font-size: medium;
+    padding: 15px;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.popup-container .popup-submit-button{
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 15px 0px 0px 0px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(191, 215, 181);
+}
+
+.popup-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-options button {
+    border: none;
+    background: none;
+    font-size: xxx-large;
+    color:  #BFD7B5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.popup-container #email , .popup-container #name{
+    height: 50px;
+}

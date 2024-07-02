@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="icon" type="image/x-icon" href="calculator.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="contact">
+      <div class="logos">
+        <a href="https://www.linkedin.com/in/subramaniyam-j-3bab86255/"><img class="contactlogo" src='linkedin.png'/></a>
+        <img class="contactlogo" id="e-mail" src="gmail.png"/>
+      </div>
+    </div>  
+    <dialog class="popup-container" >
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7628bf82-c2e6-4266-97ac-387eec7025d1">
+        <input id="name" type="text" name="username" placeholder="Enter your Name" required/>
+          <input id="email" type="email" name="useremail" placeholder="Enter your email" required/>
+          <textarea id='message' placeholder="Tell us what you think" name="message" required></textarea>
+          <div class="popup-options">
+            <button class="popup-close-button">&times</button>
+            <input class="popup-submit-button" type="submit"></input> 
+          </div>
+      </form>
+    </dialog>   
+    <div class="container">
+        <h2>calculator</h2>
+        <div class="calclayout">
+            <input class="input" type="text" id="display" name ="display"/>
+            <div class="button-container">
+            <div>
+                <button class="clear">AC</button>
+                <button class="clear">DEL</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+            </div>
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+            </div>
+            <div>
+                <button>0</button>
+                <button>.</button>
+                <button class="operator" id="equal">=</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script> 
+  </body>
+</html>
