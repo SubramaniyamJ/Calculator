@@ -112,7 +112,7 @@ h2{
     justify-self: flex-end;
 }
 
-.popup-container::backdrop{
+.popup-container::backdrop, .error-container::backdrop{
     background: rgba(155, 173, 168, .5);
 }
 
@@ -141,7 +141,7 @@ h2{
     justify-content: space-between;
 }
 
-.popup-options button {
+.popup-options button , .close-button{
     border: none;
     background: none;
     font-size: xxx-large;
@@ -156,4 +156,17 @@ form {
   
 .popup-container #email , .popup-container #name{
     height: 50px;
+}
+
+.error-container {
+    width: fit-content;
+    justify-self: center;
+    padding: 3rem;
+    margin-top: 50px;
+    border-radius: 2rem;
+    border: none;
+    background-color: #413D66;
+    color: white;
+    font-size: x-large;
+    font-weight: 500
 }

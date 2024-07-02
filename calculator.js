@@ -1,6 +1,7 @@
 //caluculator funtionality
 const input = document.getElementById("display");
 const buttons = document.querySelectorAll(".button-container button");
+const error_popup = document.querySelector(".error-container");
 const operator = ["+", "-", "*", "/", "="];
 const invalidOperator = ["+*", "-*", "*/", "/*", "*%", "/%", "-%", "+%"];
 let string = "";
@@ -14,10 +15,10 @@ arr.forEach((button) => {
         /[a-zA-Z]/.test(string) ||
         /[!@#$^&,?":{}|<>\\]/.test(string)
       ) {
-        alert("sytax error");
+        errorDialog();
         string = "";
       } else if (invalidOperator.some((i) => string.includes(i))) {
-        alert("syntax error");
+        errorDialog();
         string = "";
       } else if (
         string[0] == "*" ||
@@ -25,7 +26,7 @@ arr.forEach((button) => {
         string[0] == "%" ||
         operator.includes(string[string.length - 1])
       ) {
-        alert("syntex error");
+        errorDialog();
         string = "";
       } else {
         string = eval(string.replace("%", "/100"));
@@ -41,6 +42,13 @@ arr.forEach((button) => {
     console.log(string);
   });
 });
+
+
+//error dialog
+function errorDialog() {
+  error_popup.showModal();
+  setTimeout(()=>error_popup.close(), '900')
+}
 
 //contact pop-up fuctionality
 const mail_button = document.getElementById("e-mail");
